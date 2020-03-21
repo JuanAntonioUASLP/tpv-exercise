@@ -4,6 +4,15 @@ import oop.inheritance.data.Transaction;
 import oop.inheritance.data.TransactionResponse;
 
 public class IngenicoGPS {
+
+    private static IngenicoGPS instance;
+
+    private IngenicoGPS(){}
+
+    public static IngenicoGPS getIngenicoGPS(){
+        return instance;
+    }
+
     /**
      * Opens a connection using the GPS device
      *
