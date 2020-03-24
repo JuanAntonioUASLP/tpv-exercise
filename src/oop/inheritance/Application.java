@@ -17,7 +17,7 @@ import oop.inheritance.ingenico.IngenicoModem;
 import oop.inheritance.ingenico.IngenicoPrinter;
 import oop.inheritance.verifone.v240m.VerifoneV240mDisplay;
 
-public class Application {
+public interface Application {
 
     private CommunicationType communicationType = CommunicationType.ETHERNET;
     private SupportedTerminal supportedTerminal;
